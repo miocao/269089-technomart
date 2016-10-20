@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/15/user/269089).
-* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/id5608).
+* Наставник: [Лиза Donut Позднякова](https://htmlacademy.ru/profile/id5608).
 
 ---
 
