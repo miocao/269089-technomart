@@ -7,11 +7,13 @@
   </head>
   <body>
   	<header class="main-header">
+
   		<div class="conteiner">
 
   			<div class="logo">
-          <h2>ТЕХНОМАРТ</h2>
-  				<img src="http://placehold.it/150x100" width="150" height="100" alt="Техномарт">
+          <a href="#">
+            <h2>ТЕХНОМАРТ</h2>
+          </a>
   			</div>
   			<div class="search">
   				<form action="https://echo.htmlacademy.ru" method="post">
@@ -45,35 +47,28 @@
   				</ul>
   			</div>
 
-  			<section class="description">
-  				<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-  			</section>
+  			<p class="description">
+  				Интернет-магазин строительных материалов и инструментов для ремонта
+        </p>
+  			
   			<section class="phone">
   				<img src="http://placehold.it/20x20" width="20" height="20" alt="Телефон">
   				<p>+7(812) 555-05-55</p>
-  				<p><span>г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</span></p>
+  				<p>г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
   			</section>
 
   			<div class="entry">
-  				<ul>
-  					<li> 
   						<a href="#">
   							<img src="http://placehold.it/20x20" width="20" height="20" alt="Photo">
   							Равшан Джамшутович
                 <img src="http://placehold.it/20x20" width="20" height="20" alt="Войти">
-  						</a> 
-  					</li>
-  					<li> 
+  						</a>  
   						<a href="#">
   							Мои заказы
   						</a> 
-  					</li>
-            <li> 
               <a href="#">
                 Личный кабинет
               </a> 
-            </li>
-  				</ul>
   			</div>
       </div>
 
@@ -88,43 +83,47 @@
   					<li> <a href="#">Контакты</a></li>
   				</ul>
   			</nav>
+
   	</header>
 
     <main>
 
       <div class="breadcrumps">
         <ul>
-          <li><img src="http://placehold.it/20x20" width="20" height="20" alt="Home"></li>
+          <li><a href="#"><img src="http://placehold.it/20x20" width="20" height="20" alt="Home"></a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Перфораторы</a></li>
+          <li>Перфораторы</li>
         </ul>
       </div>
 
       <h1>ПЕРФОРАТОРЫ</h1>
 
-      <div class="filters">
-        <h4>ФИЛЬТР</h4>
-        <h3>ЦЕНА</h3>
-        <div class="slidebar">
-          <div class="rightbar">
-            <img src="http://placehold.it/20x20" width="20" height="20" alt="Right">
-          </div>
-          <div class="scale">
-            <img src="http://placehold.it/150x2" width="150" height="2" alt="Center">
-          </div>
-          <div class="leftbar">
-            <img src="http://placehold.it/20x20" width="20" height="20" alt="Left">
-          </div>
-        </div>
+      <div class="filter_price">
         <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="text" name="total" value="0">
-            <input type="text" name="total" value="30000">
+          <h4>ФИЛЬТР</h4>
+          <h3>ЦЕНА</h3>
+
+          <div class="slidebar">
+            <div class="rightbar">
+              <img src="http://placehold.it/20x20" width="20" height="20" alt="Right">
+            </div>
+            <div class="scale">
+              <img src="http://placehold.it/150x2" width="150" height="2" alt="Center">
+            </div>
+            <div class="leftbar">
+              <img src="http://placehold.it/20x20" width="20" height="20" alt="Left">
+            </div>
+          </div>
+
+          <input type="text" name="total" value="0">
+          <input type="text" name="total" value="30000">
+
         </form>
       </div>
 
-      <div class="filter">
-        <form class="manufacturer-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="filter_type">
+          <form action="https://echo.htmlacademy.ru" method="post">
               <h3 class="filters-title">ПРОИЗВОДИТЕЛИ:<h3>
             
               <input type="checkbox" name="bosch" id="bosch-field">
@@ -160,8 +159,10 @@
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
         </ul>
-        <img src="http://placehold.it/20x20" width="20" height="20" alt="Up">
-        <img src="http://placehold.it/20x20" width="20" height="20" alt="Down">
+        <div class="arrows">
+          <a href="#"> <img src="http://placehold.it/20x20" width="20" height="20" alt="Up"> </a>
+          <a href="#"> <img src="http://placehold.it/20x20" width="20" height="20" alt="Down"> </a>
+        </div>
       </div>
 
 
@@ -171,7 +172,7 @@
                     <img src="img/perforator2000.jpg" width="180" height="160" alt="Перфоратор">
                   </a>    
             <p>Перфоратор BOSCH BFG 3000</p>
-            <p><span>22500 Р.</span></p>
+            <p>22500 Р.</p>
                   <a href="#">
                     15500 Р.
                   </a>        
@@ -181,7 +182,7 @@
                     <img src="img/perforator6000.jpg" width="180" height="160" alt="Перфоратор">
                   </a>    
             <p>Перфоратор BOSCH BFG 6000</p>
-            <p><span>30500 Р.</span></p>
+            <p>30500 Р.</p>
                   <a href="#">
                     25500 Р.
                   </a>        
@@ -204,7 +205,7 @@
                     <img src="img/perforator2000.jpg" width="180" height="160" alt="Перфоратор">
                   </a>    
             <p>Перфоратор BOSCH BFG 3000</p>
-            <p><span>22500 Р.</span></p>
+            <p>22500 Р.</p>
                   <a href="#">
                     15500 Р.
                   </a>        
@@ -214,7 +215,7 @@
                     <img src="img/perforator6000.jpg" width="180" height="160" alt="Перфоратор">
                   </a>    
             <p>Перфоратор BOSCH BFG 6000</p>
-            <p><span>30500 Р.</span></p>
+            <p>30500 Р.</p>
                   <a href="#">
                     25500 Р.
                   </a>        
@@ -233,7 +234,7 @@
                     <img src="img/perforator2000.jpg" width="180" height="160" alt="Перфоратор">
                   </a>    
             <p>Перфоратор BOSCH BFG 3000</p>
-            <p><span>22500 Р.</span></p>
+            <p>22500 Р.</p>
                   <a href="#">
                     15500 Р.
                   </a>        
@@ -243,7 +244,7 @@
                     <img src="img/perforator6000.jpg" width="180" height="160" alt="Перфоратор">
                   </a>    
             <p>Перфоратор BOSCH BFG 6000</p>
-            <p><span>30500 Р.</span></p>
+            <p>30500 Р.</p>
                   <a href="#">
                     25500 Р.
                   </a>        
@@ -261,7 +262,7 @@
 
       <div class="pages">
         <ul>
-            <li> <a href="#"> 1 </a> </li> 
+            <li> 1 </li> 
             <li> <a href="#"> 2 </a> </li> 
             <li> <a href="#"> 3 </a> </li> 
             <li> <a href="#"> Следующая </a> </li> 
@@ -276,7 +277,9 @@
 
         <footer>
           <div class="logo">
-            <img src="http://placehold.it/150x70" width="150" height="70" alt="Техномарт">
+            <a href="#">
+              <h2>ТЕХНОМАРТ</h2>
+            </a>
           </div>
 
           <nav class="navigation">
@@ -290,8 +293,8 @@
           </nav>
 
           <div class="adress">
-            <p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-              +7(812)555-05-55</p>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+              +7(812)555-05-55
           </div>
 
           <nav class="navigation">
@@ -306,8 +309,8 @@
 
           <div class="container">
             <section class="footer-copyright">
-              <p>&#169;2012-2016 Компания "Техномарт"<br>
-                Все права защищены</p>
+              &#169;2012-2016 Компания "Техномарт"<br>
+                Все права защищены
             </section>
 
             <section class="footer-social">
