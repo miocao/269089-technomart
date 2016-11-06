@@ -13,12 +13,13 @@ h2 {
 	color: #32425c;
 	font-weight: normal;
 	font-family: "Cuprum";
+	text-transform: uppercase;
 }
 
 h3 {
 	font-size: 14px;
 	line-height: 18px;
-	color: black; <!-- white! -->
+	color: black; /* !white */
 	font-weight: bold;
 	font-family: "PT Sans";
 }
