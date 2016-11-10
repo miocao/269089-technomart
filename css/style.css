@@ -4,8 +4,22 @@ body {
 	color: black;
 	font-weight: normal;
 	font-family: "PT Sans", "Arial", sans-serif;
-
+	min-width: 1200px;
+	min-height: 3151px;
+	padding: 0px;
+	margin: 0px;
 }
+
+p {
+	margin: 0px;
+	padding-top: 0px;
+}
+
+body {
+	background: #ffffff url("technomart-catalog.jpg") no-repeat 50% 0px;
+	background-size: 1200px auto;
+}
+
 
 h1 {
 	font-size: 36px;
@@ -13,6 +27,8 @@ h1 {
 	color: #32425c;
 	font-weight: normal;
 	font-family: "Cuprum", "Arial", sans-serif;
+	margin: 0px;
+	padding: 0px;
 }
 
 h2 {
@@ -22,6 +38,8 @@ h2 {
 	font-weight: normal;
 	font-family: "Cuprum", "Arial", sans-serif;
 	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
 }
 
 h3 {
@@ -30,4 +48,565 @@ h3 {
 	color: black; /* !white */
 	font-weight: bold;
 	font-family: "PT Sans", "Arial", sans-serif;
+	padding: 0px;
+	margin: 0px;
 }
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	display: inline;
+}
+
+.name {
+	font-size: 24px;
+	line-height: 24px;
+	color: white;
+	font-weight: normal;
+	font-family: "Cuprum", "Arial", sans-serif;
+	padding-top: 11px;
+	margin: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.main-header {
+	min-height: 320px;
+	background-color: green;
+	opacity: 0.7;
+	width: 1200px;
+	margin: 0 auto;
+/*	margin-bottom: 59px;*/
+}
+
+.container {
+	background-color: red;
+	opacity: 0.9;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.logo {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 42px;
+	width: 110px;
+	float: left;
+	padding-right: 55px;
+	padding-left: 55px;
+	margin-right: 10px;
+}
+
+.search {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 42px;
+	width: 240px;
+	float: left;
+}
+
+.profile {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 42px;
+	width: 460px;
+	float: right;
+}
+
+.conteiner-middle {
+	background: blue;
+	opacity: 0.7;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.description {
+	background-color: orange;
+	opacity: 0.8;
+	width: 310px;
+	float: left;
+	min-height: 158px;
+	margin-right: 10px;
+}
+
+.phone {
+	background-color: orange;
+	opacity: 0.8;
+	width: 310px;
+	float: left;
+	min-height: 158px;
+}
+
+.entry {
+	background-color: orange;
+	opacity: 0.8;
+	width: 300px;
+	float: right;
+	min-height: 158px;
+}
+
+.navigation-header {
+	background-color: yellow;
+	opacity: 0.8; 
+	min-height: 60px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.articles {
+	background-color: red;
+	opacity: 0.8;
+	min-height: 123px;
+	width: 940px;
+	margin: 0 auto;
+	margin-bottom: 53px;
+	margin-top: 59px;
+}
+
+.materials {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 123px;
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+
+.instruments {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 123px;
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+
+.tecnic {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 123px;
+	width: 300px;
+	float: left;
+}
+
+.perforators {
+	background-color: yellow;
+	background-image: url("img/realman.jpg");
+	opacity: 0.8;
+	min-height: 266px;
+	width: 620px;
+	float: left;
+	margin-top: 20px;
+}
+
+.sales {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 123px;
+	width: 300px;
+	float: right;
+	margin-top: 20px;
+}
+
+.delivery-free {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 123px;
+	width: 300px;
+	float: right;
+	margin-top: 20px;
+}
+
+.popular-items {
+	background-color: green;
+	opacity: 0.8;
+	min-height: 426px;
+	width: 940px;
+	margin: 0 auto;
+	margin-bottom: 18px; 
+}
+
+.popular {	
+	background-color: blue;
+	opacity: 0.8;
+	min-height: 89px;
+	width: 940px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.perforator-catalog {
+	background-color: orange;
+	opacity: 0.8;
+	min-height: 317px;
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+}
+
+.perforator-catalog:last-child {
+	margin-right: 0px;
+}
+
+.popular-producers {
+	background-color: green;
+	opacity: 0.8;
+	min-height: 420px;
+	width: 940px;
+	margin: 0 auto;
+	margin-bottom: 85px;
+}
+
+.producers {
+	background-color: blue;
+	opacity: 0.8;
+	min-height: 89px;
+	width: 940px;
+	margin: 0 auto;
+	margin-bottom: 22px;
+}
+
+.logo-images {
+	background-color: orange;
+	opacity: 0.8;
+	min-height: 310px;
+	width: 940px;
+}
+
+.images {
+	background-color: blue;
+	opacity: 0.8;
+	min-height: 145px;
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.images:nth-child(4n) {
+	margin-right: 0;
+}
+
+.services {
+	background-color: green;
+	opacity: 0.8;
+	min-height: 522px;
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 82px;
+}
+
+.services-description {
+	background-color: blue;
+	opacity: 0.8;
+	min-height: 189px;
+}
+
+.services-list {
+	background-color: red;
+	opacity: 0.8;
+	min-height: 260px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.list {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 260px;
+	width: 240px;
+	float: left;
+	margin-right: 10px;
+}
+
+.description-delivery {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 260px;
+	width: 690px;
+	float: right;
+}
+
+.informations {
+	background-color: red;
+	opacity: 0.8;
+	min-height: 368px;
+	width: 940px;
+	margin: 0 auto;
+	margin-bottom: 86px;
+}
+
+.company {
+	background-color: orange;
+	opacity: 0.8;
+	width: 610px;
+	min-height: 368px;
+	float: left;
+	margin-right: 10px;
+}
+
+.contacts {
+	background-color: orange;
+	opacity: 0.8;
+	float: right;
+	min-height: 368px;
+	width: 320px;
+}
+
+.footer {
+	background-color: green;
+	opacity: 0.8;
+	min-height: 300px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.container-footer {
+	background-color: red;
+	opacity: 0.8;
+	min-height: 193px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.logo-footer {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 63px;
+	width: 220px;
+	float: left;
+	margin-bottom: 15px;
+}
+
+.navigation-footer {
+	background-color: yellow;
+	opacity: 0.8;
+	width: 560px;
+	float: right;
+	min-height: 63px;
+	margin-bottom: 15px;
+}
+
+.adress {
+	background-color: yellow;
+	opacity: 0.8;
+	float: left;
+	min-height: 84px;
+	margin-bottom: 31px;
+	width: 390px;
+}
+
+.navigation-footer-down {
+	background-color: yellow;
+	opacity: 0.8;
+	float: right;
+	min-height: 84px;
+	width: 540px;
+}
+
+.container-footer-down {
+	background-color: orange;
+	opacity: 0.8;
+	min-height: 107px;
+	width: 1200px;
+}
+
+.bottom {
+	background-color: blue;
+	opacity: 0.8;
+	min-height: 107px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.footer-copyright {
+	background-color: orange;
+	opacity: 0.8;
+	min-height: 107px;
+	width: 380px;
+	float: left;
+	margin-right: 10px;
+}
+
+.footer-social {
+	background-color: orange;
+	opacity: 0.8;
+	min-height: 107px;
+	width: 240px;
+	float: left;
+	margin-right: 10px;
+}
+
+.footer-mail {
+	background-color: orange;
+	opacity: 0.8;
+	min-height: 107px;
+	width: 150px;
+	float: left;
+	margin-right: 10px;
+}
+
+.footer-producer {
+	background-color: orange;
+	opacity: 0.8;
+	min-height: 106px;
+	width: 140px;
+	float: right;
+}
+
+
+
+.breadcrumps {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 59px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.page-title {
+	background-color: green;
+	opacity: 0.8;
+	width: 940px;
+	min-height: 89px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.catalog-main {
+	background-color: red;
+	opacity: 0.4;
+	min-height: 1142px;
+	width: 940px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+.filters-column {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 746px;
+	width: 220px;
+	float: left;
+}
+
+.filter-price {
+	background-color: blue;
+	opacity: 0.8;
+	min-height: 246px;
+	width: 220px;
+	margin-bottom: 25px;
+}
+
+.filter-type {
+	background-color: blue;
+	opacity: 0.8;
+	min-height: 475px;
+	width: 220px;
+}
+
+.results {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 1142px;
+	width: 700px;
+	float: right;
+}
+.sort-choice {
+	background-color: blue;
+	opacity: 0.8;
+	min-height: 38px;
+	width: 700px;
+}
+
+.sort-title {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 38px;
+	width: 230px;
+	float: left;
+}
+
+.sort-for {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 38px;
+	width: 460px;
+	float: right;
+	margin-bottom: 20px;
+}
+
+.articles-catalog {
+	background-color: yellow;
+	opacity: 0.8;
+	min-height: 994px;
+	width: 700px;
+}
+
+.perforators-catalog {
+	background-color: orange;
+	opacity: 0.8;
+	min-height: 318px;
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.perforators-catalog:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.perforators-catalog:nth-child(1) {
+	margin-top: 20px;
+}
+
+.pages {
+	margin-top: 72px;
+	background-color: orange;
+	opacity: 0.8;
+	min-height: 38px;
+	width: 700px;
+}
+
+.description-perforators {
+	background-color: orange;
+	opacity: 0.8;
+	min-height: 261px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.description-full {
+	background-color: blue;
+	opacity: 0.8;
+	min-height: 261px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
