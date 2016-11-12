@@ -4,8 +4,6 @@ body {
 	color: black;
 	font-weight: normal;
 	font-family: "PT Sans", "Arial", sans-serif;
-	min-width: 1200px;
-	min-height: 3151px;
 	padding: 0px;
 	margin: 0px;
 }
@@ -16,7 +14,7 @@ p {
 }
 
 body {
-	background: #ffffff url("technomart-catalog.jpg") no-repeat 50% 0px;
+	background: #ffffff url("technomart-index-Recovered.jpg") no-repeat 50% 0px;
 	background-size: 1200px auto;
 }
 
@@ -61,6 +59,10 @@ ul li{
 	display: inline;
 }
 
+ul.business li {
+	display: block;
+}
+
 .name {
 	font-size: 24px;
 	line-height: 24px;
@@ -79,29 +81,26 @@ ul li{
 
 
 .main-header {
-	min-height: 320px;
 	background-color: green;
 	opacity: 0.7;
-	width: 1200px;
-	margin: 0 auto;
-/*	margin-bottom: 59px;*/
+	min-height: 320px;
 }
 
 .container {
-	background-color: red;
-	opacity: 0.9;
+	background-color: lightgray;
+	opacity: 0.8;
 	width: 940px;
 	margin: 0 auto;
 }
 
-.logo {
+
+.logo-box {
 	background-color: yellow;
 	opacity: 0.8;
+	
 	min-height: 42px;
-	width: 110px;
+	width: 220px;
 	float: left;
-	padding-right: 55px;
-	padding-left: 55px;
 	margin-right: 10px;
 }
 
@@ -121,14 +120,7 @@ ul li{
 	float: right;
 }
 
-.conteiner-middle {
-	background: blue;
-	opacity: 0.7;
-	width: 940px;
-	margin: 0 auto;
-}
-
-.description {
+.middle-info {
 	background-color: orange;
 	opacity: 0.8;
 	width: 310px;
@@ -137,20 +129,9 @@ ul li{
 	margin-right: 10px;
 }
 
-.phone {
-	background-color: orange;
-	opacity: 0.8;
-	width: 310px;
-	float: left;
-	min-height: 158px;
-}
-
-.entry {
-	background-color: orange;
-	opacity: 0.8;
+.middle-info:last-child {
 	width: 300px;
-	float: right;
-	min-height: 158px;
+	margin-right: 0px;
 }
 
 .navigation-header {
@@ -162,75 +143,44 @@ ul li{
 }
 
 .articles {
-	background-color: red;
-	opacity: 0.8;
-	min-height: 123px;
-	width: 940px;
-	margin: 0 auto;
+	background-color: lightblue;
+	margin-top: 58px;
+	min-height: 408px;
 	margin-bottom: 53px;
-	margin-top: 59px;
 }
 
-.materials {
+.item {
 	background-color: yellow;
 	opacity: 0.8;
 	min-height: 123px;
 	width: 300px;
 	float: left;
 	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
-.instruments {
-	background-color: yellow;
-	opacity: 0.8;
-	min-height: 123px;
-	width: 300px;
+.item:nth-child(3),
+.item:nth-child(6),
+.item:nth-child(5){
+  margin-right: 0;
+}
+
+.item:last-child {
+	margin-bottom: 0px;
+}
+
+.big-item {
+	width: calc(300px * 2 + 20px);
+	height: calc(123px * 2 + 20px);
+	background-color: lightyellow;
 	float: left;
 	margin-right: 20px;
-}
-
-.tecnic {
-	background-color: yellow;
-	opacity: 0.8;
-	min-height: 123px;
-	width: 300px;
-	float: left;
-}
-
-.perforators {
-	background-color: yellow;
-	background-image: url("img/realman.jpg");
-	opacity: 0.8;
-	min-height: 266px;
-	width: 620px;
-	float: left;
-	margin-top: 20px;
-}
-
-.sales {
-	background-color: yellow;
-	opacity: 0.8;
-	min-height: 123px;
-	width: 300px;
-	float: right;
-	margin-top: 20px;
-}
-
-.delivery-free {
-	background-color: yellow;
-	opacity: 0.8;
-	min-height: 123px;
-	width: 300px;
-	float: right;
-	margin-top: 20px;
 }
 
 .popular-items {
-	background-color: green;
+	background-color: lightgreen;
 	opacity: 0.8;
 	min-height: 426px;
-	width: 940px;
-	margin: 0 auto;
 	margin-bottom: 18px; 
 }
 
@@ -238,9 +188,18 @@ ul li{
 	background-color: blue;
 	opacity: 0.8;
 	min-height: 89px;
-	width: 940px;
-	margin: 0 auto;
-	margin-bottom: 20px;
+	width: 630px;
+	float: left;
+	margin-bottom: 22px;
+}
+
+.all-popular {
+	background-color: blue;
+	opacity: 0.8;
+	min-height: 89px;
+	width: 300px;
+	float: right;
+	margin-bottom: 22px;
 }
 
 .perforator-catalog {
@@ -257,11 +216,9 @@ ul li{
 }
 
 .popular-producers {
-	background-color: green;
-	opacity: 0.8;
-	min-height: 420px;
-	width: 940px;
-	margin: 0 auto;
+	background-color: lightgreen;
+	opacity: 0.6;
+/*	min-height: 415px;*/
 	margin-bottom: 85px;
 }
 
@@ -269,16 +226,18 @@ ul li{
 	background-color: blue;
 	opacity: 0.8;
 	min-height: 89px;
-	width: 940px;
-	margin: 0 auto;
+	width: 630px;
 	margin-bottom: 22px;
+	float: left;
 }
 
-.logo-images {
-	background-color: orange;
+.all-producers {
+	background-color: blue;
 	opacity: 0.8;
-	min-height: 310px;
-	width: 940px;
+	min-height: 89px;
+	width: 300px;
+	margin-bottom: 22px;
+	float: right;
 }
 
 .images {
@@ -288,19 +247,23 @@ ul li{
 	width: 220px;
 	float: left;
 	margin-right: 20px;
-	margin-bottom: 20px;
 }
 
 .images:nth-child(4n) {
 	margin-right: 0;
 }
 
-.services {
-	background-color: green;
+.images:nth-child(1),
+.images:nth-child(2),
+.images:nth-child(3),
+.images:nth-child(4) {
+	margin-bottom: 20px;
+}
+
+.main-services {
+	background-color: lightgreen;
 	opacity: 0.8;
-	min-height: 522px;
-	width: 1200px;
-	margin: 0 auto;
+	min-height: 521px;
 	margin-bottom: 82px;
 }
 
@@ -314,8 +277,6 @@ ul li{
 	background-color: red;
 	opacity: 0.8;
 	min-height: 260px;
-	width: 940px;
-	margin: 0 auto;
 }
 
 .list {
@@ -327,54 +288,33 @@ ul li{
 	margin-right: 10px;
 }
 
-.description-delivery {
-	background-color: yellow;
-	opacity: 0.8;
-	min-height: 260px;
-	width: 690px;
-	float: right;
-}
-
 .informations {
-	background-color: red;
+	background-color: gray;
 	opacity: 0.8;
-	min-height: 368px;
-	width: 940px;
-	margin: 0 auto;
+	min-height: 369px;
 	margin-bottom: 86px;
 }
 
-.company {
-	background-color: orange;
+.technomart {
+	background-color: yellow;
 	opacity: 0.8;
+	min-height: 369px;
 	width: 610px;
-	min-height: 368px;
 	float: left;
-	margin-right: 10px;
 }
 
 .contacts {
 	background-color: orange;
 	opacity: 0.8;
 	float: right;
-	min-height: 368px;
+	min-height: 369px;
 	width: 320px;
 }
 
-.footer {
-	background-color: green;
-	opacity: 0.8;
-	min-height: 300px;
-	width: 1200px;
-	margin: 0 auto;
-}
-
-.container-footer {
-	background-color: red;
+.footer-top {
+	background-color: blue;
 	opacity: 0.8;
 	min-height: 193px;
-	width: 940px;
-	margin: 0 auto;
 }
 
 .logo-footer {
@@ -412,25 +352,16 @@ ul li{
 	width: 540px;
 }
 
-.container-footer-down {
+.footer-bottom {
 	background-color: orange;
 	opacity: 0.8;
-	min-height: 107px;
-	width: 1200px;
-}
-
-.bottom {
-	background-color: blue;
-	opacity: 0.8;
-	min-height: 107px;
-	width: 940px;
-	margin: 0 auto;
+	min-height: 106px;
 }
 
 .footer-copyright {
 	background-color: orange;
 	opacity: 0.8;
-	min-height: 107px;
+	min-height: 106px;
 	width: 380px;
 	float: left;
 	margin-right: 10px;
@@ -439,7 +370,7 @@ ul li{
 .footer-social {
 	background-color: orange;
 	opacity: 0.8;
-	min-height: 107px;
+	min-height: 106px;
 	width: 240px;
 	float: left;
 	margin-right: 10px;
@@ -448,7 +379,7 @@ ul li{
 .footer-mail {
 	background-color: orange;
 	opacity: 0.8;
-	min-height: 107px;
+	min-height: 106px;
 	width: 150px;
 	float: left;
 	margin-right: 10px;
@@ -462,32 +393,21 @@ ul li{
 	float: right;
 }
 
-
+.main-top {
+	margin-bottom: 60px;
+}
 
 .breadcrumps {
 	background-color: yellow;
 	opacity: 0.8;
 	min-height: 59px;
-	width: 940px;
-	margin: 0 auto;
 }
 
 .page-title {
-	background-color: green;
-	opacity: 0.8;
-	width: 940px;
-	min-height: 89px;
-	margin: 0 auto;
-	margin-bottom: 20px;
-}
-
-.catalog-main {
 	background-color: red;
-	opacity: 0.4;
-	min-height: 1142px;
-	width: 940px;
-	margin: 0 auto;
-	margin-bottom: 60px;
+	opacity: 0.8;
+	min-height: 89px;
+	margin-bottom: 20px;
 }
 
 .filters-column {
@@ -502,8 +422,8 @@ ul li{
 	background-color: blue;
 	opacity: 0.8;
 	min-height: 246px;
-	width: 220px;
 	margin-bottom: 25px;
+	width: 220px;
 }
 
 .filter-type {
@@ -516,7 +436,6 @@ ul li{
 .results {
 	background-color: yellow;
 	opacity: 0.8;
-	min-height: 1142px;
 	width: 700px;
 	float: right;
 }
@@ -524,7 +443,6 @@ ul li{
 	background-color: blue;
 	opacity: 0.8;
 	min-height: 38px;
-	width: 700px;
 }
 
 .sort-title {
@@ -548,7 +466,6 @@ ul li{
 	background-color: yellow;
 	opacity: 0.8;
 	min-height: 994px;
-	width: 700px;
 }
 
 .perforators-catalog {
@@ -570,27 +487,32 @@ ul li{
 }
 
 .pages {
-	margin-top: 72px;
+	margin-top: 32px;
 	background-color: orange;
 	opacity: 0.8;
 	min-height: 38px;
-	width: 700px;
+}
+
+.main-bottom {
+	background-color: yellow;
+	opacity: 0.8;
 }
 
 .description-perforators {
 	background-color: orange;
 	opacity: 0.8;
 	min-height: 261px;
-	width: 1200px;
-	margin: 0 auto;
 }
 
 .description-full {
 	background-color: blue;
 	opacity: 0.8;
 	min-height: 261px;
-	width: 940px;
-	margin: 0 auto;
+}
+
+
+label {
+	display: block;
 }
 
 
