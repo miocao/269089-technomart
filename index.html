@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stelesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -11,33 +14,32 @@
       <div class="top-block">
         <div class="container clearfix">
           <div class="logo-box">
-            <h2>Техномарт</h2> 
+            <a class="logotype" href="#">Техномарт</a>
           </div>
           <div class="search">
             <form action="https://echo.htmlacademy.ru" method="post">
-                  <label> 
-                    <img src="http://placehold.it/20x20" width="20" height="20" alt="Поиск">
-                    Поиск: <input type="text" name="search"> 
+                  <label class="search-button"> 
+                    <input class="name-field" type="text" name="search" placeholder="Поиск:"> 
                   </label>
               </form>
           </div>
-          <div class="profile">
+          <div class="profile-content">
             <ul class="profile-option">
               <li> 
-                <a href="#">
-                  <img src="http://placehold.it/20x20" width="20" height="20" alt="Закладки">
-                  Закладки:
+                <a class="profile markers" href="#">
+<!--                   <img src="http://placehold.it/20x20" width="20" height="20" alt="Закладки"> -->
+                  Закладки: 0
                 </a> 
               </li>
               <li> 
-                <a href="#">
-                  <img src="http://placehold.it/20x20" width="20" height="20" alt="Корзина">
-                  Корзина: 
+                <a class="profile basket" href="#">
+<!--                   <img src="http://placehold.it/20x20" width="20" height="20" alt="Корзина"> -->
+                  Корзина: 0
                 </a> 
               </li>
               <li> 
-                <a href="#">
-                  <img src="http://placehold.it/20x20" width="20" height="20" alt="Заказ">
+                <a class ="profile order" href="#">
+<!--                   <img src="http://placehold.it/20x20" width="20" height="20" alt="Заказ"> -->
                   Оформить заказ
                 </a> 
               </li>
@@ -47,158 +49,184 @@
       </div>
 
       <div class="bottom-block">
-        <div class="container clearfix">
-              <p class="middle-info">
-                 Интернет-магазин строительных материалов и инструментов для ремонта
+        <div class="container">
+          <div class="blocks clearfix">
+              <p class="middle-info info-1">
+                 Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта
               </p> 
-              <div class="middle-info">
-                <img src="http://placehold.it/20x20" width="20" height="20" alt="Телефон">
-                <p>+7(812) 555-05-55</p>
-                <p>г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+              <div class="middle-info info-2">
+                <!-- <img src="http://placehold.it/20x20" width="20" height="20" alt="Телефон"> -->
+                <p class="main-number">+7(812) 555-05-55</p>
+                <p class="main-adress">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
               </div>
-              <div class="middle-info">
-                <a href="#">
-                  <img src="http://placehold.it/20x20" width="20" height="20" alt="Войти">
+              <div class="middle-info info-3">
+                <a class="log-in" href="#">
+                  <!-- <img src="http://placehold.it/20x20" width="20" height="20" alt="Войти"> -->
                   Войти
                 </a> 
-                <a href="#">
+                <a class="registration" href="#">
                   Регистрация
                 </a> 
-              </div>
+              </div>     
+          </div>
+              <nav class="navigation-header">
+                  <ul>
+                    <li> <a href="#">Главная</a> </li>
+                    <li> <a href="#">Компания</a> </li>
+                    <li> <a href="#">Каталог</a></li>
+                    <li> <a href="#">Новости</a></li>
+                    <li> <a href="#">Спецпредложения</a></li>
+                    <li> <a href="#">Доставка</a></li>
+                    <li> <a class="last-item" href="#">Контакты</a></li>
+                  </ul>
+              </nav>
         </div>
       </div>
-
-        <nav class="navigation-header">
-            <ul class="profile-option">
-              <li> <a href="#">Главная</a> </li>
-              <li> <a href="#">Компания</a> </li>
-              <li> <a href="#">Каталог</a></li>
-              <li> <a href="#">Новости</a></li>
-              <li> <a href="#">Спецпредложения</a></li>
-              <li> <a href="#">Доставка</a></li>
-              <li> <a href="#">Контакты</a></li>
-            </ul>
-        </nav>
 
     </header>
 
   			<main>
             <div class="main-images">
               <div class="container">
-        				<div class="articles clearfix">
-
-        					<article class="item">
-            			      	<p>Материалы</p>
-                        		<a href="#">
+        				<div class="main-items clearfix">
+        					  <article class="material item">
+            			      	<div class="name-item">Материалы</div>
+                        	<div class="name-for">
+                            <a href="#">
                     		  		НА ЛЮБОЙ ВКУС 
                         		</a> 
-                    		  		<img src="http://placehold.it/90x90" width="90" height="90" alt="Материалы">      	
+                          <div>
+                    		  		<!-- <img src="http://placehold.it/90x90" width="90" height="90" alt="Материалы">      --> 	
             				</article>
-            				<article class="item">
-            					<p>Инструменты</p>
+            				<article class="instrument item">
+            					<div class="name-item">Инструменты</div>
+                        <div class="name-for">
                         		<a href="#">
                     		  		НА ВСЕ СЛУЧАИ
                         		</a> 
-                    		  		<img src="http://placehold.it/90x90" width="90" height="90" alt="Инструменты">   
+                    		  		<!-- <img src="http://placehold.it/90x90" width="90" height="90" alt="Инструменты">  -->  
             				</article>
-            				<article class="item">
-            					<p>Техника</p>
+            				<article class="tecnic item">
+            					<div class="name-item">Техника</div>
+                        <div class="name-for">
                         		<a href="#">
                     		  		ДЛЯ СТРОЙКИ
                         		</a> 
-                    		  		<img src="http://placehold.it/90x90" width="90" height="90" alt="Техника">         	
+                        </div>
+                    		  		<!-- <img src="http://placehold.it/90x90" width="90" height="90" alt="Техника">    -->      	
             				</article>
             				<article class="big-item">
-            					<h1>ПЕРФОРАТОРЫ</h1>
-            					<p>Настоящие мужские игрушки</p>
+                        <div class="big-top-block">
+            					     <h1 class="big-title">ПЕРФОРАТОРЫ</h1>
+            					     <div class="big-name">Настоящие мужские игрушки</div>
+                        </div>
+                        <div class="slider">
+                          <a class="big-arrow-left" href="#"></a>
+                          <a class="big-arrow-right" href="#"></a>
+                        </div>
+                        <div class="big-name-for">
                         		<a href="#">
                     		  		Открыть каталог
                         		</a> 
+                        </div>
                     		  		<!-- <img src="img/realman.jpg" width="620" height="268" alt="Перфораторы">   -->      	
             				</article>
-            				<article class="item">
-            					<p>Скидки 50%</p>
+            				<article class="sales item">
+            					<div class="name-item">Скидки 50%</div>
+                        <div class="name-for">
                         		<a href="#">
                     		  		НА 350 ТОВАРОВ
                         		</a> 
-                    		  		<img src="http://placehold.it/90x90" width="90" height="90" alt="Скидки">         	
+                        </div>
+                    		  		<!-- <img src="http://placehold.it/90x90" width="90" height="90" alt="Скидки">   -->       	
             				</article>
-            				<article class="item">
-            					<p>Доставка</p>
+            				<article class="delivery item">
+            					<div class="name-item">Доставка</div>
+                        <div class="name-for">
                         		<a href="#">
                     		  		БЕСПЛАТНО
                         		</a> 
-                    		  		<img src="http://placehold.it/90x90" width="90" height="90" alt="Доставка">        	
+                        </div>
+                    		  		<!-- <img src="http://placehold.it/90x90" width="90" height="90" alt="Доставка">       -->  	
             				</article>
         				</div>
 
-        				<div class="popular-items clearfix">
-                  <div class="popular">
-        					  <h2>Популятные товары:</h2>
-                  </div>
-                  <div class="all-popular">
-                    <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+        				<div class="popular-items">
+                  <div class="top-titles clearfix">
+                      <div class="popular">
+            					  <h2>Популярные товары:</h2>
+                      </div>
+                      <div class="all-popular">
+                        <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+                      </div>
                   </div>
 
-        					<article class="perforator-catalog">
-                        		<a href="#">
-                    		  		<img src="img/perforator9000.jpg" width="180" height="160" alt="Перфоратор">
-                        		</a>    
-            					<p>Перфоратор BOSCH BFG 9000</p>
-            					<p>32500 Р.</p>
-                        		<a href="#">
-                    		  		32500 Р.
-                        		</a>      	
-            				</article>
-        					<article class="perforator-catalog">
-                        		<a href="#">
-                    		  		<img src="img/perforator2000.jpg" width="180" height="160" alt="Перфоратор">
-                        		</a>    
-            					<p>Перфоратор BOSCH BFG 3000</p>
-            					<p>22500 Р.</p>
-                        		<a href="#">
-                    		  		15500 Р.
-                        		</a>      	
-            				</article>
-            				<article class="perforator-catalog">
-                        		<a href="#">
-                    		  		<img src="img/perforator6000.jpg" width="180" height="160" alt="Перфоратор">
-                        		</a>    
-            					<p>Перфоратор BOSCH BFG 6000</p>
-            					<p>35000 Р.</p>
-                        		<a href="#">
-                    		  		25000 Р.
-                       		  </a>      	
-            				</article>
-            				<article class="perforator-catalog">
-                        		<a href="#">
-                    		  		<img src="img/perforator2000.jpg" width="180" height="160" alt="Перфоратор">
-                        		</a>    
-            					<p>Перфоратор BOSCH BFG 2000</p>
-                        		<a href="#">
-                    		  		12500 Р.
-                       		  </a>      	
-            				</article>
+                  <div class="perforator-articles clearfix">
+            					<article class="perforator-catalog perforator9000">
+                          <!-- <div class="image-perforator">
+                            		<a href="#"> <img src="img/perforator9000.jpg" width="184" height="164" alt="Перфоратор"> </a>    
+                          </div> -->
+                          <div class="title-perforator"> Перфоратор BOSCH BFG 9000 </div>
+                					<div class="real-price"> 32500 Р. </div>
+                          <div class="discount-price">
+                            		<a href="#"> 25500 Р. </a>     
+                          </div> 	
+                			</article>
+
+            					<article class="perforator-catalog perforator2000">
+                          <!-- <div class="image-perforator1">
+                            		<a href="#"> <img src="img/perforator2000.jpg" width="127" height="112" alt="Перфоратор"> </a>  
+                          </div>	      -->
+                					<div class="title-perforator"> Перфоратор BOSCH BFG 3000 </div>
+                					<div class="real-price">22500 Р.</div>
+                          <div class="discount-price">
+                            		<a href="#"> 15500 Р. </a>  
+                          </div>    	
+                				</article>
+
+                				<article class="perforator-catalog perforator6000">
+                          <!-- <div class="image-perforator2">
+                            		<a href="#"> <img src="img/perforator6000.jpg" width="144" height="128" alt="Перфоратор"> </a>    
+                          </div> -->
+                					<div class="title-perforator"> Перфоратор BOSCH BFG 6000 </div>
+                					<div class="real-price">35000 Р.</div>
+                          <div class="discount-price">
+                            		<a href="#"> 25000 Р.</a>      	
+                				</article>
+
+                				<article class="perforator-catalog perforator2000">
+                          <!-- <div class="image-perforator3">
+                            		<a href="#"> <img src="img/perforator2000.jpg" width="127" height="112" alt="Перфоратор"> </a>    
+                          </div> -->
+                					<div class="title-perforator"> Перфоратор BOSCH BFG 2000 </div>
+                          <div class="real-price"> </div>
+                          <div class="discount-price">
+                            		<a href="#"> 12500 Р. </a>      	
+                				</article>
+
+                  </div>
         				</div>
 
-        				<div class="popular-producers clearfix">
-                  <div class="producers">
-        					   <h2>Популярные производители:</h2>
+        				<div class="popular-producers ">
+                  <div class="top-titles clearfix">
+                      <div class="popular">
+            					   <h2>Популярные производители:</h2>
+                      </div>
+
+                      <div class="all-popular">
+            					   <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+                      </div>
                   </div>
 
-                  <div class="all-producers">
-        					   <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
-                  </div>
-
-                  <div class="logo-images">
-        					   <div class="images"><a href="#"> <img src="img/bosch-logo.png" width="126" height="34" alt="Bosch"> </a></div>
-        					   <div class="images"><a href="#"> <img src="img/makita-logo.png" width="123" height="40" alt="Makita"> </a></div>
-        					   <div class="images"><a href="#"> <img src="img/dewalt-logo.png" width="146" height="43" alt="DeWalt"> </a></div>
-        					   <div class="images"><a href="#"> <img src="img/interscol-logo.png" width="200" height="88" alt="Интерскол"> </a></div>
-        					   <div class="images"><a href="#"> <img src="img/hitachi-logo.png" width="163" height="31" alt="Hitachi"> </a></div>
-        					   <div class="images"><a href="#"> <img src="img/lg-logo.png" width="121" height="73" alt="LG"> </a></div>
-        					   <div class="images"><a href="#"> <img src="img/aeg-logo.png" width="157" height="84" alt="AEG"> </a></div>
-        					   <div class="images"><a href="#"> <img src="img/metabo-logo.png" width="204" height="84" alt="Metabo"> </a></div>
+                  <div class="logo-images clearfix">
+        					   <a class="images" href="#"> <img src="img/bosch-logo.png" width="126" height="34" alt="Bosch"> </a>
+        					   <a class="images" href="#"> <img src="img/makita-logo.png" width="123" height="40" alt="Makita"> </a>
+        					   <a class="images" href="#"> <img src="img/dewalt-logo.png" width="146" height="43" alt="DeWalt"> </a>
+        					   <a class="images" href="#"> <img src="img/interscol-logo.png" width="200" height="88" alt="Интерскол"> </a>
+        					   <a class="images" href="#"> <img src="img/hitachi-logo.png" width="163" height="31" alt="Hitachi"> </a>
+        					   <a class="images" href="#"> <img src="img/lg-logo.png" width="121" height="73" alt="LG"> </a>
+        					   <a class="images" href="#"> <img src="img/aeg-logo.png" width="157" height="84" alt="AEG"> </a>
+        					   <a class="images" href="#"> <img src="img/metabo-logo.png" width="204" height="84" alt="Metabo"> </a>
                   </div>
         				</div>
               </div>
@@ -207,32 +235,32 @@
             <div class="main-services">
               <div class="container clearfix">
                   <div class="services-description">
-                    <h2>Сервисы</h2>
-                    <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех 
-                      сил, чтобы сделать ваши покупки приятными.</p>
+                    <h2 class="services-title">Сервисы</h2>
+                    <div class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! <br> Мы стараемся изо всех 
+                      сил, чтобы сделать ваши покупки приятными.</div>
                   </div>
 
                   <div class="services-list">
 
                     <div class="list">
-                      <div class="delivery">
-                          <a href="#"> ДОСТАВКА</a> 
+                      <div class="serv">
+                          <a href="#"> Доставка</a> 
                       </div>
 
-                      <div class="garancy">
-                          <a href="#"> ГАРАНТИЯ</a> 
+                      <div class="serv">
+                          <a href="#"> Гарантия</a> 
                       </div>
 
-                      <div class="credit">
-                          <a href="#"> КРЕДИТ</a> 
+                      <div class="serv">
+                          <a href="#"> Кредит</a> 
                       </div>
                     </div>
                   
                     <div class="description-delivery"> 
                           <h1 class="delivery-title">ДОСТАВКА</h1>
-                          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                          Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                          <img src="http://placehold.it/150x100" width="150" height="100" alt="Машина">
+                          <div class="delivery-text">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br>
+                          Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</div>
+<!--                           <img src="http://placehold.it/150x100" width="150" height="100" alt="Машина"> -->
                     </div>
                   </div>
               </div>
@@ -241,24 +269,24 @@
             <div class="informations">
               <div class="container clearfix">
                   <div class="technomart">
-                    <h2>Компания Техномарт</h2>
-                    <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и 
-                      строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! 
-                      Техномарт работает со многими транспортными компаниями:</p>
+                    <h2 class="technomart-title"> Компания «Техномарт» </h2>
+                    <div class="technomart-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>
+                      строительства не оставит равнодушными любителей сэкономить на гастарбайтерах. <br>
+                      <br>
+                      Мы можем доставить ваш товар в самые отдаленные точки России! <br>
+                      Техномарт работает со многими транспортными компаниями:</div>
                     <ul class="business">
                       <li>Деловые линии</li>
                       <li>Автотрейдинг</li>
                       <li>ЖелДорЭкспедиция</li>
                     </ul>
-                    <a href="#">Подробнее о компании</a>
+                    <a class="technomart-button" href="#">Подробнее о компании</a>
                   </div>
 
                   <div class="contacts">
-                    <h2>Контакты</h2>
-                    <p>Вы можете забрать товар сами, заехав в наш офис</p>
-                    <img src="img/map.jpg" width="300" height="158" alt="Карта">
-                    <a href="#">Заблудились? Напишите нам!</a>
+                    <h2 class="contact-title">Контакты</h2>
+                    <div class="contact-text">Вы можете забрать товар сами,<br> заехав в наш офис: </div>
+                    <a class="contact-button" href="#">Заблудились? Напишите нам!</a>
                   </div>
               </div>
             </div>
@@ -268,25 +296,23 @@
       <footer>
         <div class="footer-top clearfix">
           <div class="container">
-            <div class="logo-footer">
-              <a href="#">
-                <h2>Техномарт</h2>
+              <a class="logo-footer" href="#">
+                <h2 class="title-footer">Техномарт</h2>
               </a>
-            </div>
 
             <nav class="navigation-footer">
               <ul>
-                <li> <a href="#">Компания</a> </li>
+                <li> <a class="firstone" href="#">Компания</a> </li>
                 <li> <a href="#">Новости</a></li>
                 <li> <a href="#">Каталог</a></li>
                 <li> <a href="#">Доставка</a></li>
-                <li> <a href="#">Контакты</a></li>
+                <li> <a class="lastone" href="#">Контакты</a></li>
               </ul>
             </nav>
 
             <div class="adress">
-              <p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                +7(812)555-05-55</p>
+                г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                +7(812)555-05-55
             </div>
 
             <nav class="navigation-footer-down">
@@ -304,23 +330,23 @@
             <div class="container">
               <div class="bottom">
                   <section class="footer-copyright">
-                    <p>&#169;2012-2016 Компания "Техномарт"<br>
-                      Все права защищены</p>
+                      &#169;2012-2016 Компания "Техномарт"<br>
+                      Все права защищены
                   </section>
 
                   <section class="footer-social">
-                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                    <a class="social-btn social-btn-vk" href="#"></a>
+                    <a class="social-btn social-btn-fb" href="#"></a>
+                    <a class="social-btn social-btn-inst" href="#"></a>
                   </section>
 
                   <section class="footer-mail">
-                    <p>Обратная связь:</p>
+                    Обратная связь:
                     <a class="btn" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                   </section>
 
                   <section class="footer-producer">
-                    <p>Разработано - </p>
+                    Разработано - 
                     <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
                   </section>
               </div>
