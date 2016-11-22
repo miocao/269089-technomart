@@ -19,9 +19,9 @@ p {
 }
 
 body {
-/*    background: #ffffff url("technomart-index-Recovered.jpg") no-repeat 50% 0px;*/
+    /*    background: #ffffff url("technomart-index-Recovered.jpg") no-repeat 50% 0px;*/
     /*	background: #ffffff url("technomart-catalog.jpg") no-repeat 50% 0px;*/
-/*    background-size: 1200px auto;*/
+    /*    background-size: 1200px auto;*/
 }
 
 h1 {
@@ -49,7 +49,6 @@ h3 {
     font-size: 14px;
     line-height: 18px;
     color: black;
-    /* !white */
     font-weight: bold;
     font-family: "PT Sans", "Arial", sans-serif;
     padding: 0px;
@@ -128,16 +127,12 @@ h3 {
     background-color: #ba2732;
 }
 
-
-/*input*/
-
 .name-field {
     background: none;
     outline: none;
     border: none;
     width: 229px;
     height: 40px;
-    /*white-space: nowrap;*/
     padding-left: 40px;
     font-size: 19px;
     color: #ffffff;
@@ -554,7 +549,6 @@ h3 {
     display: inline-block;
     width: 5px;
     height: 5px;
-    /*margin: 0 3px;*/
     background: white;
     border: 3px solid white;
     vertical-align: top;
@@ -746,11 +740,6 @@ h3 {
     background-position: -87px -125px;
 }
 
-
-/*.popular-items {
-	margin-bottom: 20px; 
-}*/
-
 .top-titles {
     background: #f7f3ec;
     max-height: 89px;
@@ -783,11 +772,6 @@ h3 {
 .all-popular:active {
     background-color: #ba2732;
 }
-
-
-/*.perforator-articles {
-	min-height: 318px;
-}*/
 
 .perforator-catalog {
     position: relative;
@@ -905,13 +889,6 @@ h3 {
 .perforator-catalog {
     font-size: 16px;
 }
-
-
-/*.perforator-catalog .image-perforator1 {
-	position: 12px 12px;
-	padding-top: 22px;
-	z-index: 10;
-}*/
 
 .perforator-catalog:last-child {
     margin-right: 0px;
@@ -1565,20 +1542,6 @@ img {
     background-position: -1px 1px;
 }
 
-
-/*.breadcrumbs li::before {
-	  content: "";
-	  position: absolute;
-	  top: 1px;
-	  right: 15px;
-
-	  width: 8px;
-	  height: 13px;
-
-	  background-image: url(../img/icon-right.png);
-	  background-repeat: no-repeat;
-}*/
-
 .breadcrumbs li::before {
     content: "";
     position: absolute;
@@ -1627,7 +1590,6 @@ img {
 
 .filter-price {
     min-height: 246px;
-    /*margin-bottom: 0px;*/
     width: 220px;
 }
 
@@ -1730,13 +1692,10 @@ img {
 
 .filters-title {
     margin-bottom: 20px;
-    /*padding-top: 22px; */
-    /*padding-bottom: 20px; */
     font-size: 17px;
     font-weight: bold;
     font-family: 'PT Sans', 'Arial', sans-serif;
     text-transform: uppercase;
-    /*	box-shadow: 0 -1px 0 0 #e5e5e5;*/
 }
 
 input[type="checkbox"] {
@@ -2013,17 +1972,11 @@ input[type="checkbox"]:checked + label:active::after {
     width: 220px;
     float: left;
     margin-right: 20px;
-    /*margin-bottom: 25px;*/
 }
 
 .perforators-catalog:nth-child(3n) {
     margin-right: 0px;
 }
-
-
-/*.perforators-catalog:nth-child(1) {
-	margin-top: 20px;
-}*/
 
 .pages {
     padding: 0;
@@ -2095,30 +2048,38 @@ input[type="checkbox"]:checked + label:active::after {
 }
 
 @keyframes bounce {
-  0%   {
-    transform: translateY(-2000px);
-  }
-  70%  {
-    transform: translateY(30px);
-  }
-  90%  {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes shake {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
-  }
-  20%, 40%, 60%, 80% {
-    transform: translateX(10px);
-  }
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
 }
 
 .modal-content {
@@ -2134,12 +2095,12 @@ input[type="checkbox"]:checked + label:active::after {
 }
 
 .modal-content-show {
-  display: block;
-  animation: bounce 0.6s;
+    display: block;
+    animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+    animation: shake 0.6s;
 }
 
 .top-block-modal {
@@ -2263,8 +2224,7 @@ input[type="checkbox"]:checked + label:active::after {
     margin-left: 230px;
     color: #000000;
     background-color: #ffffff;
-    box-shadow: inset 0 7px 0 0 #ee3643,
-    			0 10px 50px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 7px 0 0 #ee3643, 0 10px 50px rgba(0, 0, 0, 0.7);
     z-index: 5000;
 }
 
@@ -2326,17 +2286,4 @@ input[type="checkbox"]:checked + label:active::after {
 .btn-continue {
     background-color: #ffffff;
     color: black;
-}
-
-
-.modal-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
-
-	width: 100%;
-	height: 100%;
-
-	background: rgba(0, 0, 0, 0.5);
 }
