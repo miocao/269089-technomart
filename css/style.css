@@ -2041,7 +2041,7 @@ input[type="checkbox"]:checked + label:active::after {
 
 @keyframes bounce {
     0% {
-        transform: translateY(-2000px);
+        transform: translateY(0px);
     }
     70% {
         transform: translateY(30px);
