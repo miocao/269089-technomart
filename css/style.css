@@ -2088,11 +2088,10 @@ input[type="checkbox"]:checked + label:active::after {
 }
 
 .modal-content {
-    position: fixed;
-    top: 15vh;
-    left: 50%;
+    position: absolute;
+    top: 335vh;
+    left: 45vh;
     min-height: 340px;
-    margin-left: -310px;
     display: none;
     color: #000000;
     background: #ffffff;
