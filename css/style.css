@@ -18,7 +18,6 @@ p {
     padding-top: 0px;
 }
 
-
 h1 {
     font-size: 36px;
     line-height: 30px;
@@ -1243,7 +1242,6 @@ img {
     margin-top: 40px;
 }
 
-
 .contact-button:hover {
     background-color: #ca2c37;
 }
@@ -2082,18 +2080,17 @@ input[type="checkbox"]:checked + label:active::after {
 }
 
 .modal-content {
-	position: fixed;
-	z-index: 60;
-	display: none;
-	overflow: hidden;
-	left: calc(50% - 620px/2);
-	bottom: 30vh;
-
+    position: fixed;
+    z-index: 60;
+    display: none;
+    overflow: hidden;
+    left: calc(50% - 620px/2);
+    bottom: 30vh;
     min-height: 340px;
     color: #000000;
     background: #ffffff;
     box-shadow: 0 7px 25px 2px rgba(41, 52, 73, 0.5);
-    border-top: 7px solid #ee3643; 
+    border-top: 7px solid #ee3643;
 }
 
 .modal-content-show {

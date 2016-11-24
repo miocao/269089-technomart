@@ -332,30 +332,28 @@
             </div>
         </div>
     </footer>
-
-          <div class="modal-content">
-              <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-              <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-                  <div class="top-block-modal">
-                      <div class="your-data">
-                          <div class="title-user">Ваше имя: </div>
-                          <input class="name-user" type="text" name="username" placeholder="Представьтесь, пожалуйста">
-                      </div>
-                      <div class="your-data">
-                          <div class="title-user"> Ваш e-mail: </div>
-                          <input class="mail-user" type="text" name="mail" placeholder="Для отправки ответа">
-                      </div>
-                      <div class="your-data">
-                          <div class="title-user">Текст письма: </div>
-                          <input class="text-user" type="text" name="textfield" placeholder="В свободной форме">
-                      </div>
-                  </div>
-                  <div class="bottom-block-modal">
-                      <button class="btn-send" type="submit">Отправить</button>
-                  </div>
-              </form>
-          </div>
-
+    <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="top-block-modal">
+                <div class="your-data">
+                    <div class="title-user">Ваше имя: </div>
+                    <input class="name-user" type="text" name="username" placeholder="Представьтесь, пожалуйста">
+                </div>
+                <div class="your-data">
+                    <div class="title-user"> Ваш e-mail: </div>
+                    <input class="mail-user" type="text" name="mail" placeholder="Для отправки ответа">
+                </div>
+                <div class="your-data">
+                    <div class="title-user">Текст письма: </div>
+                    <input class="text-user" type="text" name="textfield" placeholder="В свободной форме">
+                </div>
+            </div>
+            <div class="bottom-block-modal">
+                <button class="btn-send" type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
     <div class="modal-content-map">
         <div class="container">
             <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
@@ -408,28 +406,28 @@
         }
     });
 
-      var mapOpen = document.querySelector(".js-open-map");
+    var mapOpen = document.querySelector(".js-open-map");
 
-      var mapPopup = document.querySelector(".modal-content-map");
-      var mapClose = mapPopup.querySelector(".modal-content-close");
+    var mapPopup = document.querySelector(".modal-content-map");
+    var mapClose = mapPopup.querySelector(".modal-content-close");
 
-      mapOpen.addEventListener("click", function(event) {
+    mapOpen.addEventListener("click", function(event) {
         event.preventDefault();
         mapPopup.classList.add("modal-content-show");
-      });
+    });
 
-      mapClose.addEventListener("click", function(event) {
+    mapClose.addEventListener("click", function(event) {
         event.preventDefault();
         mapPopup.classList.remove("modal-content-show");
-      });
+    });
 
-      window.addEventListener("keydown", function(event) {
+    window.addEventListener("keydown", function(event) {
         if (event.keyCode === 27) {
-          if (mapPopup.classList.contains("modal-content-show")) {
-            mapPopup.classList.remove("modal-content-show");
-          }
+            if (mapPopup.classList.contains("modal-content-show")) {
+                mapPopup.classList.remove("modal-content-show");
+            }
         }
-      });
+    });
     </script>
 </body>
 
