@@ -2105,7 +2105,7 @@ input[type="checkbox"]:checked + label:active::after {
 
 .modal-content {
     position: fixed;
-    z-index: 60;
+    z-index: 3000;
     display: none;
     overflow: hidden;
     left: calc(50% - 620px/2);
