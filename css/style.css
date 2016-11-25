@@ -199,6 +199,16 @@ h3 {
     background-position: -227px -11px;
 }
 
+.markers:hover::before {
+    background: url("../img/sprait.png") no-repeat;
+    background-position: -256px -11px;
+}
+
+.markers:active::before {
+    background: url("../img/sprait.png") no-repeat;
+    background-position: -227px -11px;
+}
+
 .basket {
     display: block;
     width: 100px;
@@ -212,6 +222,16 @@ h3 {
     left: 17px;
     width: 17px;
     height: 16px;
+    background: url("../img/sprait.png") no-repeat;
+    background-position: -189px -9px;
+}
+
+.basket:hover::before {
+    background: url("../img/sprait.png") no-repeat;
+    background-position: -278px -11px;
+}
+
+.basket:active::before {
     background: url("../img/sprait.png") no-repeat;
     background-position: -189px -9px;
 }
@@ -1069,6 +1089,10 @@ img {
     font-size: 21px;
     padding: 21px 22px;
     font-weight: bold;
+}
+
+.slider-controls2 label:hover {
+    background-color: #293449;
 }
 
 #btn1:checked ~ .slider-controls2 label[for="btn1"],
